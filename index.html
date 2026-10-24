@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Capacitação editorial em OJS 3.5 para editores e equipes editoriais.">
+  <title>Capacitação editorial em OJS 3.5</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=66">
+</head>
+<body class="presentation">
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <aside id="sidebar" class="sidebar" aria-label="Sumário">
+    <div class="sidebar-heading">
+      <p>Sumário</p>
+      <button id="closeSidebar" class="close-button" type="button" aria-label="Fechar sumário">×</button>
+    </div>
+    <nav id="toc"></nav>
+  </aside>
+
+  <main id="conteudo" tabindex="-1">
+    <section id="inicio" class="hero study-section" data-unit="Abertura">
+      <div class="hero-copy">
+        <h1>OJS 3.5:<br><span>decisões editoriais em contexto</span></h1>
+      </div>
+      <div class="hero-visual" aria-label="Representação do fluxo editorial">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="flow-core"><strong>Fluxo editorial</strong><span>rastreabilidade, transparência e responsabilidade</span></div>
+        <div class="flow-node node-a">Submissão</div><div class="flow-node node-b">Avaliação</div>
+        <div class="flow-node node-c">Editoração</div><div class="flow-node node-d">Publicação</div>
+      </div>
+      <div class="opening-footer">UDESC 2026</div>
+    </section>
+
+    <div id="slidesRoot"></div>
+  </main>
+
+  <div id="presentationControls" class="presentation-controls" hidden>
+    <button id="tocShortcut" type="button">Sumário</button>
+    <button id="previousSlide" type="button" aria-label="Slide anterior">←</button>
+    <span id="slideCounter" aria-live="polite">Capa</span>
+    <button id="nextSlide" type="button" aria-label="Próximo slide">→</button>
+    <form id="goToForm" class="go-to-slide">
+      <label for="goToInput">Ir para o slide</label>
+      <input id="goToInput" type="number" min="1" inputmode="numeric" placeholder="nº">
+      <button type="submit">Ir</button>
+    </form>
+  </div>
+
+  <a id="ccBadge" class="cc-badge" href="https://creativecommons.org/licenses/by/4.0/deed.pt-br" target="_blank" rel="license noopener" aria-label="Licença Creative Commons Atribuição 4.0 Internacional (abre em nova aba)">
+    <img src="assets/brands/cc-by.svg" alt="CC BY 4.0" width="88" height="31">
+  </a>
+
+  <script src="slides-data.js?v=66"></script>
+  <script src="fontes-data.js?v=65"></script>
+  <script src="app.js?v=65"></script>
+</body>
+</html>
