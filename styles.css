@@ -74,6 +74,12 @@ main { display: block; }
 .eyebrow, .section-kicker, .unit-label, .slide-meta { margin: 0 0 1rem; color: var(--teal); font-weight: 800; font-size: .78rem; letter-spacing: .12em; text-transform: uppercase; }
 .hero h1 { margin: 0; color: var(--navy); font-family: var(--font-heading); font-size: clamp(3rem, 7vw, 6.8rem); line-height: 1.02; letter-spacing: -.035em; }
 .hero h1 span { color: var(--teal); font-style: italic; font-weight: 500; }
+.hero-presenters { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; max-width: 700px; margin-top: clamp(1.5rem, 3vh, 2.25rem); }
+.hero-presenters p { margin: 0; padding-left: 1rem; border-left: 3px solid var(--gold); }
+.hero-presenters strong, .hero-presenters span { display: block; }
+.hero-presenters strong { color: var(--navy); font-family: var(--font-heading); font-size: clamp(1.05rem, 1.4vw, 1.35rem); }
+.hero-presenters span { margin-top: .1rem; color: var(--teal-dark); font-weight: 700; }
+.hero-presenters a { display: inline-block; margin-top: .25rem; color: var(--navy-2); font-size: .82rem; font-weight: 700; }
 .hero-lead { max-width: 720px; margin: 2rem 0; color: #334e68; font-size: clamp(1.12rem, 2vw, 1.4rem); }
 .hero-actions { display: flex; flex-wrap: wrap; gap: .8rem; }
 .primary-button, .secondary-button { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: .75rem 1.15rem; border-radius: 999px; font-weight: 800; text-decoration: none; }
